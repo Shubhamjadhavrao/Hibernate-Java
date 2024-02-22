@@ -27,10 +27,10 @@ public class StudentRepository {
 		Employee em = new Employee("Shubham", "IT", 60000);
 		Department dep = new Department();
 		dep.setName("IT");
-		FileInputStream fis = new FileInputStream("src/main/java/img.jpeg");
-	    byte[] data = new byte[fis.available()];
-	    fis.read(data);
-		dep.setImage(data);
+//		FileInputStream fis = new FileInputStream("src/main/java/img.jpeg");
+//	    byte[] data = new byte[fis.available()];
+//	    fis.read(data);
+//		dep.setImage(data);
 
 		SessionFactory factory = new Configuration().configure().buildSessionFactory();
 		System.out.println("session factory object created successfully!!");

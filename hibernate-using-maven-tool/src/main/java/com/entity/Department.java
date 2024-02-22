@@ -59,4 +59,6 @@ public class Department {
 		return "Department [id=" + id + ", Name=" + Name + ", image=" + Arrays.toString(image) + "]";
 	}
 
+	
+
 }
