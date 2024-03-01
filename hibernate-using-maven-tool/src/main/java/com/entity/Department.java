@@ -3,6 +3,7 @@ package com.entity;
 import java.util.Arrays;
 
 import javax.persistence.Column;
+import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 
 @Entity
+
 public class Department {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

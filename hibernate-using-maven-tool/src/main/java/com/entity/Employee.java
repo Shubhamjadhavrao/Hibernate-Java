@@ -8,69 +8,67 @@ import javax.persistence.Id;
 
 @Entity
 public class Employee {
-	@Id
-	@GeneratedValue (strategy = GenerationType.IDENTITY)
-	private int id;
-	@Column
-	private String Name;
-	@Column
-	private String City;
-	@Column
-	private double Salary;
-	
-	public Employee() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    @Column
+    private String Name;
+    @Column
+    private String Department;;
+    @Column
+    private double Salary;
 
-	public Employee(String name, String city, double salary) {
-		super();
+    public Employee() {
+	super();
+	// TODO Auto-generated constructor stub
+    }
 
-		Name = name;
-		City = city;
-		Salary = salary;
-	}
+    public Employee(String name, String department, double salary) {
+	super();
 
-	public int getId() {
-		return id;
-	}
+	Name = name;
+	Department = department;
+	Salary = salary;
+    }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    public int getId() {
+	return id;
+    }
 
-	public String getName() {
-		return Name;
-	}
+    public void setId(int id) {
+	this.id = id;
+    }
 
-	public void setName(String name) {
-		Name = name;
-	}
+    public String getName() {
+	return Name;
+    }
 
-	public String getCity() {
-		return City;
-	}
+    public void setName(String name) {
+	Name = name;
+    }
 
-	public void setCity(String city) {
-		City = city;
-	}
+    public String getDepartment() {
+	return Department;
+    }
 
-	public double getSalary() {
-		return Salary;
-	}
+    public void setDepartment(String department) {
+	Department = department;
+    }
 
-	public void setSalary(double salary) {
-		Salary = salary;
-	}
+    public double getSalary() {
+	return Salary;
+    }
 
-	@Override
-	public String toString() {
-		return "Employee [id=" + id + ", Name=" + Name + ", City=" + City + ", Salary=" + Salary + "]";
-	}
+    public void setSalary(double salary) {
+	Salary = salary;
+    }
 
-	
-	
-	
-	
+    @Override
+    public String toString() {
+	return "Employee [id=" + id + ","
+		          + " Name=" + Name + ","
+			+ " Department=" + Department + ", "
+			+ "Salary=" + Salary + "]";
+    }
 
 }
